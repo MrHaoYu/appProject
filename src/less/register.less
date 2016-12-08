@@ -1,0 +1,153 @@
+@import 'common.less' ;
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border:0;
+}
+ol, ul ,li{list-style: none;}
+.header{
+    color:@lz;
+    width:100%;
+    vertical-align:middle;
+    border-bottom:1px solid @bk;
+    .fa{
+    font-size:2.5rem;
+    display:inline-block;
+    width:15%;
+    text-align:center;
+    }
+    p{
+    font-size:1.7rem;
+    .size(70%,1.5rem);
+    padding:18px 0;
+    text-align:center;
+    display:inline-block;
+    }
+    .giveup{
+    justify-content:space-around;
+    display:inline-block;
+    text-align:center;
+
+    font-size:1.7rem;
+    }
+
+}
+.message-place{
+    width: 95%;
+    margin:0 auto;
+    border-bottom:1px @bk solid;
+    p{
+        display:inline-block;
+        margin-left: 20px;
+        padding:18px 0;
+        .size(70%,1.5rem);
+        font-size:1.5rem;
+    }
+    .content-wrapp{
+        position:absolute;
+        display:none;
+        background:@w;
+        width:100%;
+        border-radius:3px;
+        padding-left:5px;
+        right:1px;
+    }
+    .place{
+    font-size:1.5rem;
+    .size(23%,1.5rem);
+    text-align:left;
+    display:inline-block;
+    position:relative;
+    }
+    .fa{
+        &:before{
+        .size(20px,20px);
+        position:absolute;
+        right: 0px;
+        top: 0px;
+        background:@w;
+        font-size:2rem;
+
+        }
+
+    }
+
+
+}
+.message-phone{
+    width:95%;
+    margin:0 auto;
+    border-bottom:1px solid @bk;
+    p{
+        display:inline-block;
+        margin-left: 16px;
+        margin-right: 10px;
+        padding:18px 0;
+        .size(9%,1.5rem);
+        font-size:1.5rem;
+    }
+
+    input{
+        display:inline-block;
+        .size(60%,3rem);
+        outline: none;
+        border:0;
+        padding-left: 5%;
+    }
+    .fa{
+        display:inline-block;
+
+    }
+}
+.shortline{
+        width:1px;
+        height:2.5rem;
+        background:@lz;
+        display:inline-block;
+        position:relative;
+        top:10px;
+    }
+.message-phone-test{
+    width:95%;
+    margin:0 auto;
+    height:54px;
+    border-bottom:1px solid @bk;
+    input{
+        display:inline-block;
+        .size(55%,3rem);
+        outline: none;
+        border:0;
+        padding-left: 5%;
+    }
+    button{
+    outline:none;
+    width:37%;
+    height:3rem;
+    background:@w;
+    border:0;
+    padding-left:20px;
+    padding-bottom:5px;
+    color:@lz;
+    }
+}
+.handup{
+    width:100%;
+    text-align:center;
+    button{
+    outline:none;
+    height:4rem;
+    border:0;
+    width:95%;
+    background:@bk;
+    margin:10px 0 ;
+    color:@w;
+    border-radius:3px;
+    }
+    p{
+        width:95%;
+        text-align:left;
+        margin:0 auto;
+    }
+}
