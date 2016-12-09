@@ -1,0 +1,130 @@
+@import 'reset.less';
+
+header{
+    width: 100%;
+    background:rgba(0, 0, 0, 0.1);
+    padding:0.5rem 0;
+    height:2rem;
+    position:fixed;
+    top: 0;
+    left:0;
+    display: flex;
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+    span{
+        padding:0.3rem 0.5rem;
+    }
+    i{
+        display:block;
+        width:1.2rem;
+        height:1.2rem;
+    }
+    .sp1{
+        flex:8;
+    }
+    .sp2{
+        flex:1;
+        text-align:right;
+    }
+    .sp3{
+        flex:1;
+        text-align:right;
+    }
+}
+
+section{
+    padding-bottom:6rem;
+    .sec-top{
+        width:100%;
+        height:42rem;
+
+        img{
+             width:100%;
+             height:100%;
+        }
+    }
+    .sec-ctr{
+        width:100%;
+        height:6rem;
+        padding:1.5rem 0;
+        .lab{
+            margin:0 auto;
+            text-align:center;
+            margin-top:0.6rem;
+        }
+        .p1{
+            font-size:1.5rem;
+        }
+        .p2{
+            font-size:1.2rem;
+            color:#c8bfc1;
+        }
+        .price{
+            font-size:1.7rem;
+            color:#F02799;
+        }
+    }
+    .sec-foot ul{
+        display:flex;
+        li{
+            flex:1;
+            list-style: none;
+            text-align:center;
+            padding:0.5rem 0;
+            border:1px solid rgba(0, 0, 0, 0.2)
+        }
+    }
+
+}
+
+footer{
+    background:white;
+    width: 100%;
+    position: fixed;
+    left:0;
+    bottom:0;
+    display:flex;
+    .f1{
+        display:block;
+        flex:1;
+        text-align: center;
+        padding:1rem;
+        i:before{
+            font-size:1.5rem;
+        }
+        p{
+            padding-top:5px;
+            font-size:1.2rem
+        }
+    }
+    .f2{
+        display:block;
+        flex:2;
+        text-align: center;
+        padding:1.8rem 0.5rem;
+
+    }
+}
+
+#message{
+    height:6rem;
+    width:14rem;
+    position:fixed;
+    border-radius:1rem;
+    background:rgba(0, 0, 0, 0.3);
+    left:30%;
+    bottom:-40%;
+    overflow: hidden;
+   /*  animation:gocenter 3s linear forwards; */
+    /* animation:goshopcar 2s linear 5s; */
+    img{
+        width:100%;
+        height:100%
+    }
+}
+
+@keyframes gocenter{
+    0%{bottom:-40%}
+    20%{bottom:60%;left:30%;height:6rem; width:14rem;border-radius: 1rem;}
+    80%{bottom:60%;left:30%;height:6rem; width:14rem;border-radius: 1rem;}
+    100%{left:90%;bottom:97%;height:0;width:0;border-radius: 100%;}
+}

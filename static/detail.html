@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+     <link rel="stylesheet" type="text/css" href='http://at.alicdn.com/t/font_877ipyiipfcd6lxr.css'>
+     <link rel="stylesheet" type="text/css" href="dist/css/detail.css">
+    <title>详情页</title>
+    <script src='dist/js/lib/touch.js'></script>
+    <script src='dist/js/zepto.js'></script>
+    <script src='dist/js/template.js'></script>
+
+</head>
+<body>
+        <header>
+            <span class="sp1"><i class="iconfont icon-prev"></i></span>
+            <span class="sp2"><i class="iconfont icon-fenxiang"></i></span>
+            <span class="sp3"><i class="iconfont icon-gouwuche"></i></span>
+        </header>
+        <section id="box"></section>
+        <footer>
+            <span class='f1 '>
+                <i style='color:red' class="iconfont icon-huaxian"></i>
+                <P>客服</P>
+            </span>
+            <span class='f1'>
+                <i class="iconfont icon-dianpu"></i>
+                <P>店铺</P>
+            </span>
+            <span class='f1'>
+                <i class="iconfont icon-xing"></i>
+                <P>收藏</P>
+            </span>
+            <span style="background:yellow;color:black;" class='f2 addcar'>
+                <P>加入购物车</P>
+            </span>
+            <span style="background:#F02799;color:black;" class='f2'>
+                <P>购买</P>
+            </span>
+        </footer>
+
+
+        <div id="message">
+            <img src="dist/img/mes.png" alt="">
+        </div>
+
+
+
+
+        <script id="content" type="text/html">
+                <div class="sec-top">
+                    <img src="{{imglist[0]}}" alt="">
+                </div>
+                <div style='padding:0.5rem;background:url(dist/img/bg.jpg);background-size:100% 100%;' class="sec-mid">
+                    <i class="iconfont icon-shizhong"></i>距离12.12活动开始还有<span class='day'></span>天<span class="hour"></span>小时<span class='min'></span>分<span class='sec'></span>秒
+                </div>
+                <div class="sec-ctr">
+                    <p class='p1 lab'>{{p1}}</p>
+                    <p class='p2 lab'>{{p2}}</p>
+                    <p class="price lab">￥{{price}}</p>
+                </div>
+                <div class="sec-foot">
+                    <ul>
+                        <li><a>销量230</a></li>
+                        <li><a>收藏50人</a></li>
+                        <li><a>默认快递</a></li>
+                    </ul>
+                </div>
+        </script>
+        <script src='dist/js/detail.js'></script>
+</body>
+</html>
