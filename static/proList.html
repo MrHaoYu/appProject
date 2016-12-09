@@ -2,8 +2,166 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href='http://at.alicdn.com/t/font_43ldx7lk52i96bt9.css'>
+		<link rel="stylesheet" type="text/css" href="dist/css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="dist/css/proList.css"/>
 	</head>
 	<body>
+		<script type="text/javascript" src="dist/js/zepto.js" ></script>
+		<div class="wrap">
+			<header>
+				<span class="header-left"><i class="iconfont icon-fd"></i></span>
+                <span class="header-center">分类</span>
+                <span class="header-right"><i class="iconfont icon-message"></i></span>
+			</header>
+			
+			<section>
+				<div class="swiper-container">
+    				<div class="swiper-wrapper">
+        				<div class="swiper-slide"><img src="dist/img/1.jpg"/></div>
+        				<div class="swiper-slide"><img src="dist/img/2.jpg"/></div>
+        				<div class="swiper-slide"><img src="dist/img/3.jpg"/></div>
+    				</div>  
+    				<div class="swiper-pagination"></div>
+				</div>
+				<div class="listMore">
+					<div class="row1">
+						<img src="dist/img/pic1.png" alt="" class="left" />
+						<img src="dist/img/pic2.png" alt="" class="left" />
+						<img src="dist/img/pic3.png" alt="" class="left" />
+					</div>
+					<div class="row1">
+						<img src="dist/img/pic4.png" alt="" class="left" />
+						<img src="dist/img/pic5.png" alt="" class="left" />
+						<img src="dist/img/pic6.png" alt="" class="left" />
+					</div>					
+				</div>
+				<div class="swiper-container1">
+					<p>热门话题<span>更多 》</span></p>
+    				<div class="swiper-wrapper">
+        				<div class="swiper-slide"><img src="dist/img/9.jpg"/></div>
+        				<div class="swiper-slide"><img src="dist/img/10.jpg"/></div>
+        				<div class="swiper-slide"><img src="dist/img/11.jpg"/></div>
+    				</div>  
+				</div>
+				<div class="swiper-container1">
+					<p>超级实惠<span>更多 》</span></p>
+    				<div class="swiper-wrapper">
+        				<div class="swiper-slide"><img src="dist/img/12.jpg"/></div>
+        				<div class="swiper-slide"><img src="dist/img/13.jpg"/></div>
+        				<div class="swiper-slide"><img src="dist/img/10.jpg"/></div>
+    				</div>  
+				</div>
+				<div class="swiper-container1">
+					<p>好货精选<span>更多 》</span></p>
+    				<div class="swiper-wrapper">
+        				<div class="swiper-slide"><img src="dist/img/9.jpg"/></div>
+        				<div class="swiper-slide"><img src="dist/img/11.jpg"/></div>
+        				<div class="swiper-slide"><img src="dist/img/13.jpg"/></div>
+    				</div>  
+				</div>
+				<div id="temContent" class="list">
+										
+				</div>
+				<div id="temContent2" class="list">
+					
+				</div>
+				
+				<div class="end">已经到底部啦~~<b id="back" style="color: gold;">回到顶部</b></div>
+			</section>
+			
+			<footer>
+        		<span>
+            		<i class="iconfont icon-fangzi"></i>
+            		<P>首页</P>
+        		</span>
+        		<span>
+           		 <i class="iconfont icon-fenlei"></i>
+            		<P>分类</P>
+        		</span>
+        		<span>
+            		<i class="iconfont icon-shoutibao"></i>
+            		<P>购物车</P>
+        		</span>
+       		 	<span>
+            		<i class="iconfont icon-wode"></i>
+            		<P>我</P>
+        		</span>
+    		</footer>
+		</div>
+		
+		<script src="dist/js/lib/swiper.js"></script>
+		<script src="dist/js/template.js"></script>
+		
+		<script>        
+  			var mySwiper = new Swiper ('.swiper-container', {
+  				autoplay:2000,
+    			loop: true,
+    			pagination: '.swiper-pagination'
+ 			 })    
+ 			 
+ 			 var mySwiper1 = new Swiper ('.swiper-container1', {
+    			loop: true,
+    			slidesPerView: 2
+ 			 })     
+  		</script>
+  		<script id="proTemp" type="text/html">
+			<ul>
+				<p>全部分类</p>
+				{{each list as value i}}
+        			<li>
+        				<img src="{{value.imglist[0]}}" />
+        				<p>{{value.name}}</p>
+        			</li>
+    			{{/each}}
+			</ul>
+		</script>
+		
+		<script id="proTemp2" type="text/html">
+			<ul>
+				<p>热销商品</p>
+				{{each list as value i}}
+        			<li>
+        				<img src="{{value.imglist[1]}}" />
+        				<p>{{value.p1}}</p>
+        			</li>
+    			{{/each}}
+			</ul>
+		</script>
+  		
+  		<script>
+  			$(document).ready(function(){
+  				$.ajax({
+  					type:"get",
+  					url:"mock/data.json",
+  					async:true,
+  					dataType:"json",
+  					success:function(data){
+  						
+  						var mess={
+  							list:data
+  						};
+  						//console.log(mess)
+						var html = template('proTemp', mess);
+						$('#temContent').html(html);
+						var html2 = template('proTemp2', mess);
+						$('#temContent2').html(html2);
+  					}
+  				});
+  				
+  				$("#back").on("click",function(){
+					$(window).scrollTop(0);
+					
+  				})
+				
+  			});
+  			
+  			
+  			
+  		</script>
+  		
+  		
 	</body>
 </html>
