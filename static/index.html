@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="dist/css/index.css">
+    <link rel="stylesheet" type="text/css" href='http://at.alicdn.com/t/font_43ldx7lk52i96bt9.css'>
+    <link rel="stylesheet" type="text/css" href="dist/css/swiper.min.css">
+    <script src='dist/js/lib/touch.js'></script>
+</head>
+<body>
+
+    <div id="wrap">
+            <!-- /section1开始 -->
+       <div id="section1" class='section'>
+           <header id="header" class="header">
+                <span class="header-left"><i class="iconfont icon-fd"></i></span>
+                <span class="header-center">美丽说</span>
+                <span class="header-right"><i class="iconfont icon-message"></i></span>
+            </header>
+
+            <section>
+
+                <!-- lunbo -->
+                <div class="lunbo">
+                    <div class="swiper-container swiper-container1">
+                        <div class="swiper-wrapper">
+                            <div style="background:url(dist/img/1.jpg);background-size: 100% 100%;" class="swiper-slide"></div>
+                            <div style="background:url(dist/img/2.jpg);background-size: 100% 100%;" class="swiper-slide"></div>
+                            <div style="background:url(dist/img/3.jpg);background-size: 100% 100%;" class="swiper-slide"></div>
+                            <div style="background:url(dist/img/4.jpg);background-size: 100% 100%;" class="swiper-slide"></div>
+                        </div>
+                        <!-- 如果需要分页器 -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div id="content">
+                    <span>
+                        <img src="dist/img/5.jpg" alt="" />
+                        <p>每日上新</p>
+                    </span>
+                    <span>
+                        <img src="dist/img/6.jpg" alt="" />
+                        <p>美丽优选</p>
+                    </span>
+                    <span>
+                        <img src="dist/img/7.jpg" alt="" />
+                        <p>风格好店</p>
+                    </span>
+                    <span>
+                        <img src="dist/img/8.jpg" alt="" />
+                        <p>TOP榜单</p>
+                    </span>
+
+                </div>
+
+                <div class="lunbo2">
+                    <h1 style='margin: 1rem auto;width:12rem;height:2rem;background:url(dist/img/14.jpg);background-size:100% 100%'></h1>
+                    <div class="swiper-container swiper-container2">
+                        <div class="swiper-wrapper">
+                            <div style="background:url(dist/img/9.jpg);background-size: 100% 100%;" class="swiper-slide"></div>
+                            <div style="background:url(dist/img/10.jpg);background-size: 100% 100%;" class="swiper-slide"></div>
+                            <div style="background:url(dist/img/11.jpg);background-size: 100% 100%;" class="swiper-slide"></div>
+                            <div style="background:url(dist/img/12.jpg);background-size: 100% 100%;" class="swiper-slide"></div>
+                        </div>
+                        <!-- 如果需要分页器 -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="main">
+                    <h1 style='margin: 1rem auto;width:12rem;height:2rem;background:url(dist/img/15.jpg);background-size:100% 100%'></h1>
+                    <div class="good">
+                       <div class="good-top">
+                            <div class="big hid"><img src="" alt="" /></div>
+                            <div class="sml sml1 hid"><img src="" alt="" /></div>
+                            <div class="sml sml2 hid"><img src="" alt="" /></div>
+                            <div class="sml sml3 hid"><img src="" alt="" /></div>
+                       </div>
+                       <div class="good-bottom">
+                            <p class='p1 lab'>周冬雨 | 衣品与事业双开挂</p>
+                            <p class='p2 lab'>穿短裙露腿，穿长衣裙露脚踝</p>
+                            <p class="bnt lab">看搭配</p>
+                       </div>
+
+
+                    </div>
+                </div>
+
+
+
+            </section>
+
+       </div>
+            <!-- /section1结束 -->
+
+
+
+
+            <!-- footer -->
+    <footer id="footer">
+        <span>
+            <i class="iconfont icon-fangzi"></i>
+            <P>首页</P>
+        </span>
+        <span>
+            <i class="iconfont icon-fenlei"></i>
+            <P>分类</P>
+        </span>
+        <span>
+            <i class="iconfont icon-shoutibao"></i>
+            <P>购物车</P>
+        </span>
+        <span>
+            <i class="iconfont icon-wode"></i>
+            <P>我</P>
+        </span>
+    </footer>
+        <!-- footer结束 -->
+
+    <script src="dist/js/index.js"></script>
+    <script src='dist/js/lib/swiper.js'></script>
+    <script>
+        var mySwiper = new Swiper ('.swiper-container1', {
+            loop: true,
+            autoplay:3000,
+            // 如果需要分页器
+            pagination: '.swiper-pagination'
+          })
+         var mySwiper2 = new Swiper ('.swiper-container2', {
+            loop: true
+          })
+    </script>
+</body>
+</html>

@@ -7,6 +7,6 @@ $('.content').click(function(){
     $('.content-wrapp').hide();
 })
 // $('.')
-$('.fa-times-circle').click(function(){
-    $('.phone-number').hide();
-})
+// $('.fa-times-circle').click(function(){
+//     $('.phone-number').hide();
+// })

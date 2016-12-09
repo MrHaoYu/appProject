@@ -42,7 +42,12 @@ $('.pass-pic img').click(function(){
     
 })
 randomInitImg()
+// function(){
+//     var name = $('.name input').val()
+//     name.pattern(^[\u4E00-\u9FA5A-Za-z0-9_]+$);
+//     if()
 
+// }
 
 
 

@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+.clearfloat:after {
+  content: "";
+  clear: both;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+.section {
+  background: #DEDADA;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.section .header {
+  background: white;
+  width: 100%;
+  display: flex;
+}
+.section .header span {
+  flex: 1;
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+.section .header-left {
+  text-align: left;
+}
+.section .header-right {
+  text-align: right;
+}
+#wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#wrap #section1 section {
+  width: 100%;
+  height: 100%;
+}
+#wrap #section1 section .lunbo .swiper-container1 {
+  width: 100%;
+  height: 15rem;
+}
+#wrap #section1 section #content {
+  margin: 0.5rem 0;
+  background: white;
+  width: 100%;
+  display: flex;
+}
+#wrap #section1 section #content span {
+  flex: 1;
+  padding: 10px;
+  display: block;
+  text-align: center;
+}
+#wrap #section1 section #content span img {
+  width: 4rem;
+  height: 4rem;
+}
+#wrap #section1 section #content span p {
+  font-size: 1.2rem;
+}
+#wrap #section1 section .lunbo2 {
+  overflow: hidden;
+  background: white;
+}
+#wrap #section1 section .lunbo2 .swiper-container2 {
+  width: 90%;
+  height: 10rem;
+}
+#wrap #section1 section .main {
+  margin-top: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: pink;
+  padding: 0 10px;
+}
+#wrap #section1 section .main .good {
+  width: 94%;
+  height: 33rem;
+}
+#wrap #section1 section .main .good .good-top {
+  width: 100%;
+  height: 25rem;
+  position: relative;
+}
+#wrap #section1 section .main .good .good-top .hid {
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+#wrap #section1 section .main .good .good-top .big {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 71%;
+  border-radius: 1rem ;
+}
+#wrap #section1 section .main .good .good-top .sml {
+  position: absolute;
+  height: 32%;
+  width: 27%;
+  border-radius: 1rem ;
+  left: 72%;
+}
+#wrap #section1 section .main .good .good-top .sml img {
+  width: 100%;
+  height: 100%;
+}
+#wrap #section1 section .main .good .good-top .sml1 {
+  top: 0;
+}
+#wrap #section1 section .main .good .good-top .sml2 {
+  top: 34%;
+}
+#wrap #section1 section .main .good .good-top .sml3 {
+  top: 68%;
+}
+#wrap #section1 section .main .good .good-bottom {
+  width: 100%;
+  height: 7rem;
+}
+#wrap #section1 section .main .good .good-bottom .lab {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 0.6rem;
+}
+#wrap #section1 section .main .good .good-bottom .p1 {
+  font-size: 1.5rem;
+}
+#wrap #section1 section .main .good .good-bottom .p2 {
+  font-size: 1.2rem;
+  color: #c8bfc1;
+}
+#wrap #section1 section .main .good .good-bottom .bnt {
+  width: 7rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1rem;
+  background: #f22b4b;
+  border-radius: 1rem;
+  text-align: center;
+  border: none;
+  box-shadow: 0 0.2rem 0.5rem black;
+}
+footer {
+  background: white;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+}
+footer span {
+  display: block;
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+footer span i::before {
+  font-size: 1.5rem;
+}
+footer span p {
+  padding-top: 5px;
+  font-size: 1.2rem;
+}

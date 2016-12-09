@@ -4,9 +4,9 @@ var gulp = require('gulp'), //本地安装gulp所用到的地方
     minifycss = require('gulp-minify-css'),
     uglify= require('gulp-uglify'),
     watch = require('gulp-watch');
-
+ 
 gulp.task('watch', function () {
-    // Endless stream mode
+    // Endless stream mode 
     watch('src/less/*.less', { ignoreInitial: false })
 	       .pipe(less())
             .pipe(gulp.dest('static/dist/css'));
@@ -24,6 +24,7 @@ gulp.task('jsmin', function () {
         .pipe(gulp.dest('static/dist/js'));
 });
 
+
 //定义一个testLess任务（自定义任务名称）
 gulp.task('less', function () {
     gulp.src('src/less/*.less') //该任务针对的文件
@@ -40,9 +41,6 @@ gulp.task('images', function() {
 
 gulp.task('default',['less', 'jsmin', 'images']); //定义默认任务 elseTask为其他任务，该示例没有定义elseTask任务
 
-//gulp.task(name[, deps], fn) 定义任务  name：任务名称 deps：依赖任务名称 fn：回调函数
-//gulp.src(globs[, options]) 执行任务处理的文件  globs：处理的文件路径(字符串或者字符串数组)
-//gulp.dest(path[, options]) 处理完后文件生成路径
 
 
 
