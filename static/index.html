@@ -7,7 +7,9 @@
     <link rel="stylesheet" type="text/css" href="dist/css/index.css">
     <link rel="stylesheet" type="text/css" href='http://at.alicdn.com/t/font_43ldx7lk52i96bt9.css'>
     <link rel="stylesheet" type="text/css" href="dist/css/swiper.min.css">
+    <script src='dist/js/zepto.js'></script>
     <script src='dist/js/lib/touch.js'></script>
+    <script src="dist/js/template.js"></script>
 </head>
 <body>
 
@@ -71,26 +73,12 @@
                 </div>
 
                 <div class="main">
-                    <h1 style='margin: 1rem auto;width:12rem;height:2rem;background:url(dist/img/15.jpg);background-size:100% 100%'></h1>
-                    <div class="good">
-                       <div class="good-top">
-                            <div class="big hid"><img src="" alt="" /></div>
-                            <div class="sml sml1 hid"><img src="" alt="" /></div>
-                            <div class="sml sml2 hid"><img src="" alt="" /></div>
-                            <div class="sml sml3 hid"><img src="" alt="" /></div>
-                       </div>
-                       <div class="good-bottom">
-                            <p class='p1 lab'>周冬雨 | 衣品与事业双开挂</p>
-                            <p class='p2 lab'>穿短裙露腿，穿长衣裙露脚踝</p>
-                            <p class="bnt lab">看搭配</p>
-                       </div>
-
+                    <div class="title">
+                        <h1 style='margin: 0 auto;width:12rem;height:2rem;background:url(dist/img/15.jpg);background-size:100% 100%'></h1>
 
                     </div>
+                        <div id="goodbox" class="good"></div>
                 </div>
-
-
-
             </section>
 
        </div>
@@ -120,6 +108,22 @@
     </footer>
         <!-- footer结束 -->
 
+    <script id="model" type="text/html">
+            {{each data as value i}}
+           <div class="good-top">
+                <div class="big hid"><img src="{{value.imglist[0]}}" alt="" /></div>
+                <div class="sml sml1 hid"><img src="{{value.imglist[1]}}" alt="" /></div>
+                <div class="sml sml2 hid"><img src="{{value.imglist[2]}}" alt="" /></div>
+                <div class="sml sml3 hid"><img src="{{value.imglist[3]}}" alt="" /></div>
+           </div>
+           <div class="good-bottom">
+                <p class='p1 lab'>{{value.p1}}</p>
+                <p class='p2 lab'>{{value.p2}}</p>
+                <p class="bnt lab" data-id={{value.id}}><a style='text-decoration: none;color:white'>看搭配</a></p>
+           </div>
+           {{/each}}
+    </script>
+
     <script src="dist/js/index.js"></script>
     <script src='dist/js/lib/swiper.js'></script>
     <script>
@@ -128,10 +132,16 @@
             autoplay:3000,
             // 如果需要分页器
             pagination: '.swiper-pagination'
-          })
-         var mySwiper2 = new Swiper ('.swiper-container2', {
+        })
+        var mySwiper2 = new Swiper ('.swiper-container2', {
             loop: true
           })
+
+
+
+
+
+
     </script>
 </body>
 </html>

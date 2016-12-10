@@ -28,7 +28,7 @@ html {
 .section .header span {
   flex: 1;
   display: block;
-  padding: 10px;
+  padding: 1rem;
   text-align: center;
 }
 .section .header-left {
@@ -48,7 +48,7 @@ html {
 }
 #wrap #section1 section .lunbo .swiper-container1 {
   width: 100%;
-  height: 15rem;
+  height: 20rem;
 }
 #wrap #section1 section #content {
   margin: 0.5rem 0;
@@ -72,32 +72,39 @@ html {
 #wrap #section1 section .lunbo2 {
   overflow: hidden;
   background: white;
+  padding-bottom: 1rem;
 }
 #wrap #section1 section .lunbo2 .swiper-container2 {
   width: 90%;
-  height: 10rem;
+  height: 20rem;
 }
 #wrap #section1 section .main {
   margin-top: 0.5rem;
-  overflow: hidden;
   position: relative;
   width: 100%;
-  background: pink;
-  padding: 0 10px;
+  background: white;
+}
+#wrap #section1 section .main .title {
+  padding: 0.8rem 0;
 }
 #wrap #section1 section .main .good {
+  padding: 0 1rem;
   width: 94%;
-  height: 33rem;
+  margin-bottom: 5.5rem;
 }
 #wrap #section1 section .main .good .good-top {
   width: 100%;
-  height: 25rem;
+  height: 30rem;
   position: relative;
 }
 #wrap #section1 section .main .good .good-top .hid {
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
+}
+#wrap #section1 section .main .good .good-top .hid img {
+  width: 100%;
+  height: 100%;
 }
 #wrap #section1 section .main .good .good-top .big {
   position: absolute;
@@ -114,10 +121,6 @@ html {
   border-radius: 1rem ;
   left: 72%;
 }
-#wrap #section1 section .main .good .good-top .sml img {
-  width: 100%;
-  height: 100%;
-}
 #wrap #section1 section .main .good .good-top .sml1 {
   top: 0;
 }
@@ -130,6 +133,7 @@ html {
 #wrap #section1 section .main .good .good-bottom {
   width: 100%;
   height: 7rem;
+  padding: 1.5rem 0;
 }
 #wrap #section1 section .main .good .good-bottom .lab {
   margin: 0 auto;
@@ -168,7 +172,7 @@ footer span {
   text-align: center;
   padding: 10px;
 }
-footer span i::before {
+footer span i:before {
   font-size: 1.5rem;
 }
 footer span p {
