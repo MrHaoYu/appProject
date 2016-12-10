@@ -54,4 +54,9 @@ $.ajax({
     }
 })
 
-
+$('.sp1').click(function(){
+    window.history.back();
+})
+$('.sp3').click(function(){
+    window.location.href='beautiful.html';
+})
