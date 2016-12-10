@@ -5,6 +5,9 @@
 html {
   font-size: 62.5%;
 }
+a {
+  text-decoration: none;
+}
 .clearfloat:after {
   content: "";
   clear: both;
@@ -166,16 +169,17 @@ footer {
   bottom: 0;
   display: flex;
 }
-footer span {
+footer a {
   display: block;
   flex: 1;
   text-align: center;
   padding: 10px;
+  color: black;
 }
-footer span i:before {
+footer a i:before {
   font-size: 1.5rem;
 }
-footer span p {
+footer a p {
   padding-top: 5px;
   font-size: 1.2rem;
 }
