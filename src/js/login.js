@@ -39,7 +39,7 @@ $('.pass-pic img').click(function(){
     if(ok){
             alert("ok");
     }
-    
+
 })
 randomInitImg()
 // function(){
@@ -48,7 +48,9 @@ randomInitImg()
 //     if()
 
 // }
-
+$('.fa-chevron-left').click(function(){
+    window.location.href='index.html';
+})
 
 
 

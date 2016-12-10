@@ -10,3 +10,6 @@ $('.content').click(function(){
 // $('.fa-times-circle').click(function(){
 //     $('.phone-number').hide();
 // })
+$('.fa-angle-left').click(function(){
+    window.history.back();
+})
