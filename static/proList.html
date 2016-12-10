@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title></title>
+		<title>美丽说</title>
 		<link rel="stylesheet" type="text/css" href='http://at.alicdn.com/t/font_43ldx7lk52i96bt9.css'>
 		<link rel="stylesheet" type="text/css" href="dist/css/swiper.min.css">
 		<link rel="stylesheet" type="text/css" href="dist/css/proList.css"/>
@@ -13,17 +13,17 @@
 		<div class="wrap">
 			<header>
 				<span class="header-left"><i class="iconfont icon-fd"></i></span>
-                <span class="header-center">分类</span>
+                <span style='font-size: 1.5rem' class="header-center">分类</span>
                 <span class="header-right"><i class="iconfont icon-message"></i></span>
 			</header>
-			
+
 			<section>
 				<div class="swiper-container">
     				<div class="swiper-wrapper">
         				<div class="swiper-slide"><img src="dist/img/1.jpg"/></div>
         				<div class="swiper-slide"><img src="dist/img/2.jpg"/></div>
         				<div class="swiper-slide"><img src="dist/img/3.jpg"/></div>
-    				</div>  
+    				</div>
     				<div class="swiper-pagination"></div>
 				</div>
 				<div class="listMore">
@@ -36,7 +36,7 @@
 						<img src="dist/img/pic4.png" alt="" class="left" />
 						<img src="dist/img/pic5.png" alt="" class="left" />
 						<img src="dist/img/pic6.png" alt="" class="left" />
-					</div>					
+					</div>
 				</div>
 				<div class="swiper-container1">
 					<p>热门话题<span>更多 》</span></p>
@@ -44,7 +44,7 @@
         				<div class="swiper-slide"><img src="dist/img/9.jpg"/></div>
         				<div class="swiper-slide"><img src="dist/img/10.jpg"/></div>
         				<div class="swiper-slide"><img src="dist/img/11.jpg"/></div>
-    				</div>  
+    				</div>
 				</div>
 				<div class="swiper-container1">
 					<p>超级实惠<span>更多 》</span></p>
@@ -52,7 +52,7 @@
         				<div class="swiper-slide"><img src="dist/img/12.jpg"/></div>
         				<div class="swiper-slide"><img src="dist/img/13.jpg"/></div>
         				<div class="swiper-slide"><img src="dist/img/10.jpg"/></div>
-    				</div>  
+    				</div>
 				</div>
 				<div class="swiper-container1">
 					<p>好货精选<span>更多 》</span></p>
@@ -60,18 +60,18 @@
         				<div class="swiper-slide"><img src="dist/img/9.jpg"/></div>
         				<div class="swiper-slide"><img src="dist/img/11.jpg"/></div>
         				<div class="swiper-slide"><img src="dist/img/13.jpg"/></div>
-    				</div>  
+    				</div>
 				</div>
 				<div id="temContent" class="list">
-										
+
 				</div>
 				<div id="temContent2" class="list">
-					
+
 				</div>
-				
+
 				<div class="end">已经到底部啦~~<b id="back" style="color: gold;">回到顶部</b></div>
 			</section>
-			
+
 			<footer>
         		<a href="index.html"><span>
             		<i class="iconfont icon-fangzi"></i>
@@ -91,21 +91,21 @@
         		</a></span>
     		</footer>
 		</div>
-		
+
 		<script src="dist/js/lib/swiper.js"></script>
 		<script src="dist/js/template.js"></script>
-		
-		<script>        
+
+		<script>
   			var mySwiper = new Swiper ('.swiper-container', {
   				autoplay:2000,
     			loop: true,
     			pagination: '.swiper-pagination'
- 			 })    
- 			 
+ 			 })
+
  			 var mySwiper1 = new Swiper ('.swiper-container1', {
     			loop: true,
     			slidesPerView: 2
- 			 })     
+ 			 })
   		</script>
   		<script id="proTemp" type="text/html">
 			<ul>
@@ -118,7 +118,7 @@
     			{{/each}}
 			</ul>
 		</script>
-		
+
 		<script id="proTemp2" type="text/html">
 			<ul>
 				<p>热销商品</p>
@@ -130,7 +130,7 @@
     			{{/each}}
 			</ul>
 		</script>
-  		
+
   		<script>
   			$(document).ready(function(){
   				$.ajax({
@@ -139,7 +139,7 @@
   					async:true,
   					dataType:"json",
   					success:function(data){
-  						
+
   						var mess={
   							list:data
   						};
@@ -150,18 +150,18 @@
 						$('#temContent2').html(html2);
   					}
   				});
-  				
+
   				$("#back").on("click",function(){
 					$(window).scrollTop(0);
-					
+
   				})
-				
+
   			});
-  			
-  			
-  			
+
+
+
   		</script>
-  		
-  		
+
+
 	</body>
 </html>
